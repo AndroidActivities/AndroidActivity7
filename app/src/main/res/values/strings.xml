@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Initial screen -->
+    <string name="app_name">Widgets</string>
+    <string name="Etiqueta_muestrabotones">Mostra Botons</string>
+    <string name="Etiqueta_muestraspinners">Mostra Spinners</string>
+    <string name="Etiqueta_muestralist">Mostra ListView</string>
+    <string name="Etiqueta_muestragrid">Mostra GridView</string>
+
+    <!-- Buttons example -->
+    <string name="button_app_name">Botons i altres widgets clicables</string>
+    <string name="hola">Hola !</string>
+    <string name="adios">Adios !</string>
+    <string name="chao">Chao !</string>
+    <string name="plantilla_mensaje_boton">Has fet click al boto %s .</string>
+    <string name="plantilla_mensaje_imagebutton"> Has fet click al ImageButton que presenta %s.</string>
+    <string name="plantilla_mensaje_radioboton">Has fet click al radiobutton %s .</string>
+    <string name="plantilla_mensaje_check">Has fet click al checkbox %s .</string>
+    <string name="info_imagebutton_1"> el logo de Android </string>
+    <string name="info_imagebutton_2"> la imatge de la camara   </string>
+    <string name="info_imagebutton_3"> la imatge del GPS </string>
+    <string name="info_imagebutton_4"> el Drawable definit a button_android.xml </string>
+    <string name="info_imagebutton_5"> el Drawable definit a button_dialog.xml </string>
+    <string name="info_imagebutton_6"> el Drawable definit a button_rating_star.xml  </string>
+
+
+    <!-- TextViews -->
+    <string name="radio_noexlusivo">RadioButton no exclusiu</string>
+    <string name="radio_exlusivo">RadioButton exclusiu</string>
+    <string name="checkboxGroup">Linia de Checkboxes</string>
+    <string name="toogle">Grup de ToogleButtons</string>
+    <string name="botones">Botons de texto</string>
+    <string name="imageButtonA">ImageButtons</string>
+    <string name="imageButtonB">ImageButtons amb 3 estats</string>
+
+    <!-- Plantillas -->
+    <string name="plantilla_mensaje_nuevaseleccion"> Has seleccionat el RadioButton \'%s\' </string>
+    <string name="plantilla_mensaje_togglebutton_simple"> Has fet click al ToggleButton \'%s\' </string>
+
+
+    <!-- ToogleButtons -->
+    <string name="ssl_toggle_on">Utilitzes SSL</string>
+    <string name="ssl_toggle_off">No utilitzes SSL</string>
+    <string name="gps_toggle_on">GPS On</string>
+    <string name="gps_toggle_off">GPS Off</string>
+    <string name="plantilla_mensaje_togglebutton" formatted="false"> Has fet click en el ToggleButton %s. La etiqueta es ara \'%s\'. </string>
+
+    <!-- Spinners example -->
+    <string name="spinner_app_name">Spinners (Combo Boxes)</string>
+    <string name="prompt_spinner1">Favricants actuals de Android (Opcions de XML)</string>
+    <string-array name="entradas_spinner1">
+        <item>Acer</item>
+        <item>Dell</item>
+        <item>HTC</item>
+        <item>Huawei</item>
+        <item>Kyocera</item>
+        <item>LG</item>
+        <item>Motorola</item>
+        <item>Nexus</item>
+        <item>Samsung</item>
+        <item>Sony Ericsson</item>
+        <item>T-Mobile</item>
+        <item>Neptune</item>
+    </string-array>
+    <string name="plantilla_mensaje_spinner">Has seleccionat \'%s\'.</string>
+    <string name="prompt_spinner2">Fabricants potencials de Android  (Opcions de Java)</string>
+
+</resources>

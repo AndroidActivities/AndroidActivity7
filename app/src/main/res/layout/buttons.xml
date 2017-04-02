@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/botones" />
+
+
+        <Button
+            android:text="@string/hola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="muestraTextoBoton" />
+
+        <Button
+            android:text="@string/adios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="muestraTextoBoton" />
+
+        <Button
+            android:text="@string/chao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="muestraTextoBoton" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/imageButtonA" />
+
+        <ImageButton
+            android:id="@+id/img1"
+            android:src="@drawable/android_platform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="muestraInfoImageButton" />
+
+        <ImageButton
+            android:id="@+id/img2"
+            android:src="@drawable/camera_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="muestraInfoImageButton" />
+
+        <ImageButton
+            android:id="@+id/img3"
+            android:src="@drawable/gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="muestraInfoImageButton" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/imageButtonB" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+        <ImageButton
+            android:id="@+id/img4"
+            android:src="@drawable/button_android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="muestraInfoImageButton" />
+
+        <ImageButton
+            android:id="@+id/img5"
+            android:src="@drawable/button_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="muestraInfoImageButton" />
+
+        <ImageButton
+            android:id="@+id/img6"
+            android:src="@drawable/button_rating_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="muestraInfoImageButton" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/radio_noexlusivo" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radGourp1"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <RadioButton
+                android:id="@+id/rad1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/hola"
+                android:onClick="muestraTextoRadioBoton" />
+
+            <RadioButton
+                android:id="@+id/rad2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/adios"
+                android:onClick="muestraTextoRadioBoton" />
+
+            <RadioButton
+                android:id="@+id/rad3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/chao"
+                android:onClick="muestraTextoRadioBoton" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/checkboxGroup" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <CheckBox
+            android:text="@string/hola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="muestraTextoCheck" />
+
+        <CheckBox
+            android:text="@string/adios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="muestraTextoCheck" />
+
+        <CheckBox
+            android:text="@string/chao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="muestraTextoCheck" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/toogle" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <!--  Uses the default ON/OFF labels -->
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="muestraInfoToggleBoton" />
+
+        <ToggleButton
+            android:textOn="@string/ssl_toggle_on"
+            android:textOff="@string/ssl_toggle_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="muestraInfoToggleBoton" />
+
+        <ToggleButton
+            android:textOn="@string/gps_toggle_on"
+            android:textOff="@string/gps_toggle_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="muestraInfoToggleBoton" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/jaume/.android/build-cache/8ccc7c44e3e3dbe83c3051d28b726d50048ebdbd/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="/home/jaume/AndroidStudioProjects/AndroidActivity7/app/build/intermediates/pre-dexed/debug/classes_a03e1ab938c6dbdb335d19005d9a577cc1e94ee8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jaume/.android/build-cache/3b62ad3f5d887c280939c609f809c15eeaf0f774/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="/home/jaume/AndroidStudioProjects/AndroidActivity7/app/build/intermediates/pre-dexed/debug/classes_0816b66553f2bd23200529836f1959e9d60430e0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jaume/.android/build-cache/9fe5ae6c5cef30afcbab9d8bb02da34629df09f0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="/home/jaume/AndroidStudioProjects/AndroidActivity7/app/build/intermediates/pre-dexed/debug/classes_36515a31e17859335ea77069153f8ec87a6a5472.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jaume/.android/build-cache/e3b81705dc934de903d5c49f454491ee050b90e5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="/home/jaume/AndroidStudioProjects/AndroidActivity7/app/build/intermediates/pre-dexed/debug/classes_64245c4aa23b4142c045dc857f5c34a3e0903106.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Software/Android/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="/home/jaume/AndroidStudioProjects/AndroidActivity7/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.0_0aeb74d0a4b989fb4d4cb6abf65e4a5b374c3fed.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jaume/.android/build-cache/bc8eff057f0ffcf16375d35809a09036666b6811/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="/home/jaume/AndroidStudioProjects/AndroidActivity7/app/build/intermediates/pre-dexed/debug/classes_909e5ef068a0456f68ef15ce84d6bb8becb32fd2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jaume/.android/build-cache/3f4ff623920bae2a95b32a6a07f3ee041e19ad88/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="/home/jaume/AndroidStudioProjects/AndroidActivity7/app/build/intermediates/pre-dexed/debug/classes_ad2dbac23e4e4e0a42eeab2ef70bebd582ac3218.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jaume/.android/build-cache/f3b5e773c8c9745b965858fa5d8c65c4a091f724/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="/home/jaume/AndroidStudioProjects/AndroidActivity7/app/build/intermediates/pre-dexed/debug/classes_eb2340c9d8ce23c4472c64d06e1170e6ea7e0034.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jaume/.android/build-cache/d6983245692f78ab5348aec094ee4929249c404e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/jaume/AndroidStudioProjects/AndroidActivity7/app/build/intermediates/pre-dexed/debug/classes_26f37cf99ef1319d0e165474b0848989e727d39b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/jaume/.android/build-cache/27c0d8a950741ccdd004363aecd8815389f94cc7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="/home/jaume/AndroidStudioProjects/AndroidActivity7/app/build/intermediates/pre-dexed/debug/classes_f9f77b5cb9900f48777bad701e6cf1f0f535c9a8.jar" />
+    </item>
+
+</items>
