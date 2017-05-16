@@ -18,12 +18,10 @@ public class ListViewActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listview);
-
         mPlantillaMensajeItemSelected = getString(R.string.plantilla_mensaje_spinner);
         ListView listv = (ListView) findViewById(R.id.listView);
         registerForContextMenu(listv);
-        listv.setOnItemClickListener(new ListViewInfo());
-
+        listv.setOnItemClickListener(new Listener());
     }
 
     @Override
@@ -53,13 +51,12 @@ public class ListViewActivity extends Activity {
      * Codi Montse
      */
 
-    private class ListViewInfo implements AdapterView.OnItemClickListener {
+    private class Listener implements AdapterView.OnItemClickListener {
         private boolean isFirst = true;
         @Override
         public void onItemClick(AdapterView<?> adapterView, View selectedView, int position, long id) {
-            if (isFirst) {
-                isFirst = false;
-            } else {
+            if (isFirst) isFirst = false;
+            else {
                 String selection = adapterView.getItemAtPosition(position).toString();
                 String message = String.format(mPlantillaMensajeItemSelected, selection);
                 Toast.makeText(ListViewActivity.this, message, Toast.LENGTH_SHORT).show();
