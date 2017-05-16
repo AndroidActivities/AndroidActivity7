@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 
+
 public class WidgetsInitialActivity extends Activity {
 
     @Override
@@ -15,22 +16,23 @@ public class WidgetsInitialActivity extends Activity {
         setContentView(R.layout.main);
     }
 
-
-    /**
-     * Switches to the ButtonActivity when the associated button is clicked.
-     */
-
-    public void muestraBotones(View clickedButton) {
-        Intent in = new Intent(this, ButtonActivity.class);
+    
+    /** Switches to the ButtonActivity when the associated button is clicked. */
+    
+    public void muestraBotones (View clickedButton) {
+    	Intent in = new Intent(this, ButtonActivity.class);
+        startActivity(in);
+    }
+    
+    /** Switches to the SpinnerActivity when the associated button is clicked. */
+    
+    public void muestraSpinners(View clickedButton) {
+        Intent in = new Intent(this, SpinnerActivity.class);
         startActivity(in);
     }
 
-    /**
-     * Switches to the SpinnerActivity when the associated button is clicked.
-     */
-
-    public void muestraSpinners(View clickedButton) {
-        Intent in = new Intent(this, SpinnerActivity.class);
+    public void muestraGridView(View clickedButton) {
+        Intent in = new Intent(this, GridViewActivity.class);
         startActivity(in);
     }
 
@@ -39,8 +41,13 @@ public class WidgetsInitialActivity extends Activity {
         startActivity(in);
     }
 
-    public void muestraGridView(View clickedButton) {
-        Intent in = new Intent(this, GridViewActivity.class);
+    public void muestraCardView(View clickedButton) {
+        Intent in = new Intent(this, CardViewActivity.class);
+        startActivity(in);
+    }
+
+    public void muestraListViewPerso(View clickedButton) {
+        Intent in = new Intent(this, RecicleView.class);
         startActivity(in);
     }
 }

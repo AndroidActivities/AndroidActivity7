@@ -1,7 +1,6 @@
 package com.android.widgets.demo;
 
 import android.app.Activity;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -9,26 +8,47 @@ import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.Toast;
 
-public class GridViewActivity extends Activity {
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
+
+public class GridViewActivity extends Activity {
+    private String mPlantillaMensajeItemSelected;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.gridviews);
+        setContentView(R.layout.gridview);
+        mPlantillaMensajeItemSelected = getString(R.string.plantilla_mensaje_spinner);
+        GridView gv = (GridView) findViewById(R.id.gridView);
+        List<String> futureAndroidVendors = getFutureAndroidVendors();
 
-        Resources res = getResources();
-        String[] arr = res.getStringArray(R.array.entradas_spinner1);
+        ArrayAdapter<String> Adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, futureAndroidVendors);
+        gv.setAdapter(Adapter);
+        gv.setOnItemClickListener(new GridViewInfo());
 
-        GridView gridv = (GridView) findViewById(R.id.gridView);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arr);
-        gridv.setAdapter(adapter);
-
-        gridv.setOnItemClickListener(new android.widget.AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String item = (String) parent.getItemAtPosition(position);
-                Toast.makeText(getApplicationContext(), item, Toast.LENGTH_LONG).show();
-            }
-        });
     }
+
+    private List<String> getFutureAndroidVendors() {
+        String[] vendorArray = { "RIM", "Palm", "Nokia" };
+        List<String> vendorList = Arrays.asList(vendorArray);
+        Collections.shuffle(vendorList);
+        return(vendorList);
+    }
+
+    private void showToast(String text) {
+        Toast.makeText(this, text, Toast.LENGTH_LONG).show();
+    }
+
+
+
+    private class GridViewInfo implements AdapterView.OnItemClickListener{
+        @Override
+        public void onItemClick(AdapterView<?> adapterView, View selectedView, int position, long id) {
+            String selection = adapterView.getItemAtPosition(position).toString();
+            String message = String.format(mPlantillaMensajeItemSelected, selection);
+            showToast(message);
+        }
+    }
+
 }

@@ -1,155 +1,116 @@
 package com.android.widgets.demo;
 
 import android.app.Activity;
+import android.util.Log;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
 public class ButtonActivity extends Activity {
-
+	
     private String mPlantillaMensajeBoton;
     private String mPlantillaMensajeImageBoton;
     private String mPlantillaMensajeToggleBotonSimple;
-    private String mPlantillaMensajeToggleBoton;
-
-    private String mPlantillaMensajeRadioBoton;
-    private String mPlantillaMensajeCheck;
-
-    private final String DESMARCADO = "Desmarcado";
-    private final String MARCADO = "Marcado";
-
-    private String radioAnterior;
-    private String toggleActual;
-
-    RadioButton radio1;
-    RadioButton radio2;
-    RadioButton radio3;
-
+    private String mPlantillaMensajeCheckBox;
+    public boolean FirstTime = true;
+    RadioButton lastClicked;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.buttons);
+        setContentView(R.layout.buttons); 
         mPlantillaMensajeBoton = getString(R.string.plantilla_mensaje_boton);
         mPlantillaMensajeImageBoton = getString(R.string.plantilla_mensaje_imagebutton);
         mPlantillaMensajeToggleBotonSimple = getString(R.string.plantilla_mensaje_togglebutton_simple);
-        mPlantillaMensajeToggleBoton = getString(R.string.plantilla_mensaje_togglebutton);
-
-
-        mPlantillaMensajeRadioBoton = getString(R.string.plantilla_mensaje_radioboton);
-        mPlantillaMensajeCheck = getString(R.string.plantilla_mensaje_check);
-
-        radio1 = (RadioButton) findViewById(R.id.rad1);
-        radio2 = (RadioButton) findViewById(R.id.rad2);
-        radio3 = (RadioButton) findViewById(R.id.rad3);
-
-        radioAnterior = "";
-        toggleActual = "";
+        mPlantillaMensajeCheckBox = getString(R.string.plantilla_mensaje_checkbox);
+        final RadioGroup group = (RadioGroup) findViewById(R.id.RGroup);
+        group.setOnCheckedChangeListener(new RadioGroupInfo());
     }
 
-    /**
-     * Makes a Toast showing the label of the Button, RadioButton, or CheckBox.
-     * ImageButtons do not have text, and are not subclasses of Button, so you
-     * cannot pass an ImageButton to this method.
-     * You need the muestraInfoImageButton method.
+    /** Makes a Toast showing the label of the Button, RadioButton, or CheckBox.
+     *  ImageButtons do not have text, and are not subclasses of Button, so you
+     *  cannot pass an ImageButton to this method.
+     *  You need the muestraInfoImageButton method.
      */
-
-    public void muestraTextoBoton(View clickedButton) {
-        Button button = (Button) clickedButton;
+    
+    public void muestraTextoBoton(View clickedButton) { 
+        Button button = (Button)clickedButton;
         CharSequence text = button.getText();
         String message = String.format(mPlantillaMensajeBoton, text);
         showToast(message);
     }
-
-    public void muestraTextoRadioBoton(View clickedButton) {
-        RadioButton radbutton = (RadioButton) clickedButton;
-        onRadioButtonClick(radbutton);
-        CharSequence text = radbutton.getText();
-        String message = String.format(mPlantillaMensajeRadioBoton, text);
-        radioAnterior = text.toString();
-        showToast(message);
-    }
-
-    public void muestraTextoCheck(View clickedButton) {
-        CheckBox button = (CheckBox) clickedButton;
+    public void muestraTextoCheckBoxBoton(View clickedButton) {
+        CheckBox button = (CheckBox)clickedButton;
         CharSequence text = button.getText();
-        if (button.isChecked()) {
-            text = text + MARCADO;
-        } else {
-            text = text + DESMARCADO;
+        String message1 = String.format(mPlantillaMensajeCheckBox, text);
+        if(button.isChecked()){
+            message1.concat("Button checked");
+        }else {
+            message1.concat("Button not checked");
         }
-        String message = String.format(mPlantillaMensajeCheck, text);
-        showToast(message);
-    }
-
-    public void getRadioAnterior() {
-        if (radioAnterior.isEmpty()) {
-            Toast.makeText(this, "No había selección previa", Toast.LENGTH_LONG).show();
-        } else {
-            Toast.makeText(this, "La selección previa era: " + radioAnterior, Toast.LENGTH_LONG).show();
-        }
-    }
-
-    public void onRadioButtonClick(View clickedButton) {
-        getRadioAnterior();
+        showToast(message1);
     }
 
     public void muestraInfoImageButton(View clickedImageButton) {
-        ImageButton imb = (ImageButton) clickedImageButton;
-        int idImage = imb.getId();
-        String imageString = "";
-        switch (idImage) {
-            case R.id.img1:
-                imageString = getString(R.string.info_imagebutton_1);
-                break;
-            case R.id.img2:
-                imageString = getString(R.string.info_imagebutton_2);
-                break;
-            case R.id.img3:
-                imageString = getString(R.string.info_imagebutton_3);
-                break;
-            case R.id.img4:
-                imageString = getString(R.string.info_imagebutton_4);
-                break;
-            case R.id.img5:
-                imageString = getString(R.string.info_imagebutton_5);
-                break;
-            case R.id.img6:
-                imageString = getString(R.string.info_imagebutton_6);
-                break;
-        }
-        //String imageString = getString(imageId);
+        ImageButton button = (ImageButton)clickedImageButton;
+        String imageString = (String) button.getContentDescription();
         String message = String.format(mPlantillaMensajeImageBoton, imageString);
         showToast(message);
     }
 
-
-    /**
-     * Makes a Toast showing whether you turned ToggleButton on or off. Also
-     * shows the resultant text (label).
+    
+    /** Makes a Toast showing whether you turned ToggleButton on or off. Also
+     *  shows the resultant text (label).
      */
-
-    public void muestraInfoToggleBoton(View clickedToggleButton) {
-        ToggleButton toggleButton = (ToggleButton) clickedToggleButton;
+    
+    public void muestraInfoToggleBoton(View clickedToggleButton) { 
+        ToggleButton toggleButton = (ToggleButton)clickedToggleButton;
         String status;
         if (toggleButton.isChecked()) {
             status = "ON";
         } else {
             status = "OFF";
         }
-        toggleActual = toggleButton.getText().toString();
-        String message = String.format(mPlantillaMensajeToggleBoton, status, toggleActual);
-
+        String message = mPlantillaMensajeToggleBotonSimple + " " + toggleButton.getText() + " " + status;
         showToast(message);
     }
-
-
+    
+    
     private void showToast(String text) {
-        Toast.makeText(this, text, Toast.LENGTH_LONG).show();
+    	Toast.makeText(this, text, Toast.LENGTH_LONG).show();
     }
 
+
+    private class RadioGroupInfo implements OnCheckedChangeListener {
+        private String mPlantillaMensajeNuevaSeleccion;
+        private String mPlantillaSeleccionCambiada;
+        public RadioGroupInfo() {
+            mPlantillaMensajeNuevaSeleccion =
+                    getString(R.string.plantilla_mensaje_nuevaseleccion);
+            mPlantillaSeleccionCambiada = getString(R.string.plantilla_mensaje_seleccioncambiada);
+        }
+        public void onCheckedChanged(RadioGroup group, int checkedId) {
+            RadioButton button = (RadioButton) findViewById(group.getCheckedRadioButtonId());
+            if(!FirstTime) {
+                String message = String.format(mPlantillaSeleccionCambiada, button.getText(), lastClicked.getText());
+                showToast(message);
+            }else{
+                String message = String.format(mPlantillaMensajeNuevaSeleccion, button.getText());
+                showToast(message);
+            }
+
+            if (group.getCheckedRadioButtonId() != checkedId) {
+                group.check(checkedId);
+            }
+            lastClicked = button;
+            FirstTime = false;
+        }
+    }
 }
+

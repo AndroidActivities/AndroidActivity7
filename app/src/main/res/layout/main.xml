@@ -3,28 +3,35 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <Button
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
+    <Button 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent" 
         android:text="@string/Etiqueta_muestrabotones"
-        android:onClick="muestraBotones" />
-
-    <Button
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
+        android:onClick="muestraBotones"/>
+    <Button 
+        android:layout_height="wrap_content" 
+        android:layout_width="match_parent" 
         android:text="@string/Etiqueta_muestraspinners"
-        android:onClick="muestraSpinners" />
+        android:onClick="muestraSpinners"/>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/Etiqueta_muestraGridView"
+        android:onClick="muestraGridView"/>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/Etiqueta_muestrasListView"
+        android:onClick="muestraListView"/>
 
     <Button
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="@string/Etiqueta_muestralist"
-        android:onClick="muestraListView" />
-
+        android:text="@string/Etiqueta_muestrasCardView"
+        android:onClick="muestraCardView"/>
     <Button
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="@string/Etiqueta_muestragrid"
-        android:onClick="muestraGridView" />
+        android:text="@string/Etiqueta_muestrasListViewPerso"
+        android:onClick="muestraListViewPerso"/>
 </LinearLayout>
