@@ -1,0 +1,145 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:2:1-66:12
+	package
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:3:7-41
+		INJECTED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:5:7-32
+		INJECTED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml
+	android:versionCode
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:4:7-30
+		INJECTED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:6:5-44
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/jaume/.android/build-cache/41f7e5d466463c215dfc9eb3be51c208d32cd881/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/jaume/.android/build-cache/0e8e84a3998bac6510d479d8685109396030a267/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/jaume/.android/build-cache/933eceec88f99815d4524e33551240752358d742/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:25.0.1] /home/jaume/.android/build-cache/ee61a80ae861b30fc61e6bfb0e7a34d618f3ed13/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.1.1] /home/jaume/.android/build-cache/19d974a4131cb767c257bccba6c35639af8e89e7/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/jaume/.android/build-cache/4a6dc97a975c041502ab9339a0ac45477990e112/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/jaume/.android/build-cache/818621480929acf5e4c3af4032d296da9f4dacf5/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/jaume/.android/build-cache/b65e8b594ab3b0b14a355089763975f3dce851bf/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/jaume/.android/build-cache/276bdc7fb9140d398acc50b5523bf69ee5d25a40/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/jaume/.android/build-cache/b29200c8903d450a871bb44a3f34243650f2d565/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/jaume/.android/build-cache/958be739ed9b6da8a681a5aa6ff227e01b6de477/output/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/jaume/.android/build-cache/41f7e5d466463c215dfc9eb3be51c208d32cd881/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:6:15-41
+		INJECTED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml
+application
+ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:8:5-65:19
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/jaume/.android/build-cache/41f7e5d466463c215dfc9eb3be51c208d32cd881/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/jaume/.android/build-cache/0e8e84a3998bac6510d479d8685109396030a267/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/jaume/.android/build-cache/933eceec88f99815d4524e33551240752358d742/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:cardview-v7:25.0.1] /home/jaume/.android/build-cache/ee61a80ae861b30fc61e6bfb0e7a34d618f3ed13/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/jaume/.android/build-cache/4a6dc97a975c041502ab9339a0ac45477990e112/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/jaume/.android/build-cache/818621480929acf5e4c3af4032d296da9f4dacf5/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/jaume/.android/build-cache/b65e8b594ab3b0b14a355089763975f3dce851bf/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/jaume/.android/build-cache/276bdc7fb9140d398acc50b5523bf69ee5d25a40/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/jaume/.android/build-cache/b29200c8903d450a871bb44a3f34243650f2d565/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/jaume/.android/build-cache/958be739ed9b6da8a681a5aa6ff227e01b6de477/output/AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:8:48-80
+	android:icon
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:8:18-47
+	android:theme
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:8:81-112
+activity#com.android.widgets.demo.WidgetsInitialActivity
+ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:9:9-15:20
+	android:label
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:10:19-51
+	android:name
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:9:19-57
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:11:13-14:29
+action#android.intent.action.MAIN
+ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:12:17-69
+	android:name
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:12:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:13:17-77
+	android:name
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:13:27-74
+activity#com.android.widgets.demo.ButtonActivity
+ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:16:9-23:20
+	android:screenOrientation
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:18:19-55
+	android:label
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:17:19-58
+	android:name
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:16:19-49
+intent-filter#android.intent.action.VIEW+android.intent.category.DEFAULT
+ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:19:13-22:29
+action#android.intent.action.VIEW
+ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:20:25-66
+category#android.intent.category.DEFAULT
+ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:21:17-76
+	android:name
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:21:27-73
+activity#com.android.widgets.demo.SpinnerActivity
+ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:24:9-31:20
+	android:screenOrientation
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:26:19-55
+	android:label
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:25:19-59
+	android:name
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:24:19-50
+activity#com.android.widgets.demo.ListViewActivity
+ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:32:9-39:20
+	android:screenOrientation
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:34:17-53
+	android:label
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:33:17-46
+	android:name
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:32:19-51
+activity#com.android.widgets.demo.GridViewActivity
+ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:40:9-47:20
+	android:screenOrientation
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:42:13-49
+	android:label
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:41:13-42
+	android:name
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:40:19-51
+activity#com.android.widgets.demo.CardViewActivity
+ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:48:9-55:20
+	android:screenOrientation
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:50:13-49
+	android:label
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:49:13-42
+	android:name
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:48:19-51
+activity#com.android.widgets.demo.RecicleView
+ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:56:9-63:20
+	android:screenOrientation
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:58:13-49
+	android:label
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:57:13-42
+	android:name
+		ADDED from /home/jaume/AndroidStudioProjects/AndroidActivity7/app/src/main/AndroidManifest.xml:56:19-46
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/jaume/.android/build-cache/41f7e5d466463c215dfc9eb3be51c208d32cd881/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/jaume/.android/build-cache/0e8e84a3998bac6510d479d8685109396030a267/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/jaume/.android/build-cache/933eceec88f99815d4524e33551240752358d742/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/jaume/.android/build-cache/4a6dc97a975c041502ab9339a0ac45477990e112/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/jaume/.android/build-cache/818621480929acf5e4c3af4032d296da9f4dacf5/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/jaume/.android/build-cache/b65e8b594ab3b0b14a355089763975f3dce851bf/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/jaume/.android/build-cache/276bdc7fb9140d398acc50b5523bf69ee5d25a40/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/jaume/.android/build-cache/b29200c8903d450a871bb44a3f34243650f2d565/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/jaume/.android/build-cache/958be739ed9b6da8a681a5aa6ff227e01b6de477/output/AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/jaume/.android/build-cache/41f7e5d466463c215dfc9eb3be51c208d32cd881/output/AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/jaume/.android/build-cache/41f7e5d466463c215dfc9eb3be51c208d32cd881/output/AndroidManifest.xml:26:9-47

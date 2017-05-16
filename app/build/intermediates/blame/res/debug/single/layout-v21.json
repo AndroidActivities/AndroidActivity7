@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/jaume/AndroidStudioProjects/AndroidActivity7/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/jaume/.android/build-cache/41f7e5d466463c215dfc9eb3be51c208d32cd881/output/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/jaume/AndroidStudioProjects/AndroidActivity7/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/home/jaume/.android/build-cache/41f7e5d466463c215dfc9eb3be51c208d32cd881/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/jaume/AndroidStudioProjects/AndroidActivity7/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/jaume/.android/build-cache/41f7e5d466463c215dfc9eb3be51c208d32cd881/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/jaume/AndroidStudioProjects/AndroidActivity7/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/jaume/.android/build-cache/41f7e5d466463c215dfc9eb3be51c208d32cd881/output/res/layout-v21/notification_template_icon_group.xml"
+    }
+]
